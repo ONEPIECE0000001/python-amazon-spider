@@ -3,10 +3,10 @@
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
-[![Scrapy](https://img.shields.io/badge/Scrapy-2.11%2B-green)](https://scrapy.org/)
+[![Scrapy](https://img.shields.io/badge/Scrapy-2.13%2B-green)](https://scrapy.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-1.40%2B-brightgreen)](https://playwright.dev/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-151%20passed-brightgreen)]()
+[![Maintenance](https://img.shields.io/badge/Maintenance-Active-green)]()
 
 **专业的亚马逊商品数据采集解决方案 | 智能反爬 | Pipeline 架构 | 自动化调度**
 
@@ -14,9 +14,18 @@
 
 ## 项目概述
 
-面向市场调研公司的自动化数据采集系统，用于监测亚马逊平台的商品价格波动、
-用户评论趋势和促销活动。基于 Scrapy Item Pipeline 架构，支持 Playwright
-动态渲染、多层反爬策略、数据质量保障和 Celery 定时调度。
+本项目是基于原始项目独立优化的版本，面向市场调研公司的自动化数据采集系统，用于监测亚马逊平台的商品价格波动、用户评论趋势和促销活动。基于 Scrapy Item Pipeline 架构，支持 Playwright 动态渲染、多层反爬策略、数据质量保障和 Celery 定时调度。
+
+**🔧 独立优化特色**
+
+- 全面升级至 Scrapy 2.13+，采用新的 `async def start()` 入口
+- 增强反爬策略，优化页面交互模拟
+- 改进数据清洗 Pipeline，提升数据质量
+- 优化用户代理管理，提高稳定性
+
+**⚠️ 声明**
+
+本项目为独立开发版本，与原始项目（[Hhhexx/python-amazon-spider](https://github.com/Hhhexx/python-amazon-spider)）无直接关联。所有优化和改进均为本项目独立完成。
 
 ## 核心功能
 
